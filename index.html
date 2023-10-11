@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>SO... Deeper conversation starter</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="#" />
+</head>
+
+<body>
+    <div class="opciones">
+        <p>Seleccione idioma:</p>
+        <select class="custom-select" name="idioma" id="idioma" onchange="cambiarIdioma()">
+            <option value="es">Español</option>
+            <option value="en">English</option>
+        </select>
+    </div>
+    <div id="app">
+    
+        <div class="card-grid-space">
+            <div id="tarjeta" class="card ficha" onclick="nextCard()">
+                <div class="cartel">
+                    <span>SO</span>
+                    <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                </div>
+                <div class="texto">
+                    <p>a collection of questions</p>
+                    <p>for deeper discussions</p>
+                </div>
+            </div>
+        </div>
+        <p class="marcador"> Hay <span id="contador"> </span> cartas de <span id="total"></span> </p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script type="text/javascript" src="./js/cards.json"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+
+</body>
+
+</html>

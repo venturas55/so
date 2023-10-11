@@ -1,0 +1,215 @@
+/* VARIABLES */
+
+:root {
+  --main-bg-color: black;
+  --main-color: rgb(245, 243, 241);
+  --app-bg: black;
+  --bar-bg: rgb(110, 109, 109);
+  --bar-color: rgb(241, 241, 245);
+}
+
+/*   var(--botton-color)    */
+
+
+/* CUERPO */
+body {
+  background-color: var(--main-bg-color);
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-attachment: fixed;
+
+}
+
+body,
+input,
+select,
+textarea {
+  font-family: "Merriweather", Georgia, serif;
+  font-size: 1.0em;
+}
+
+
+/* APLICACION */
+#app {
+  background: var(--app-bg);
+  width: 90%;
+  min-width: 200px;
+  margin: 0px auto;
+
+}
+
+/* CONTENEDOR OPCIONES DESPUES DE FICHA */
+
+
+.card {
+  font-family: 'Heebo';
+  --bg-filter-opacity: 0.5;
+  background-image: linear-gradient(rgba(0, 0, 0, var(--bg-filter-opacity)), rgba(0, 0, 0, var(--bg-filter-opacity))), var(--bg-img);
+  height: 20em;
+  width: 12em;
+  font-size: 1.5em;
+  color: white;
+  border-radius: 1em;
+  padding: 0.1em;
+  /*   margin: 2em; */
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  box-shadow: 0 0 5em -1em black;
+  transition: all, var(--transition-time);
+  position: relative;
+  overflow: hidden;
+  border: 10px solid #ccc;
+}
+
+.card div {
+  width: 100%;
+}
+
+.card h1 {
+  margin: 0;
+  font-size: 1.5em;
+  line-height: 1.2em;
+}
+
+.card p {
+  text-align: center;
+  font-size: 0.75em;
+  font-family: 'Open Sans';
+  line-height: 2em;
+}
+
+.card .datebl {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  font-size: 1em;
+  line-height: 1em;
+}
+
+.card .datebr {
+  position: absolute;
+  bottom: 15px;
+  right: 0px;
+  font-size: 1em;
+  line-height: 1em;
+  transform: rotate(-90deg);
+}
+
+.card .datetl {
+  position: absolute;
+  top: 15px;
+  left: 0px;
+  font-size: 1em;
+  line-height: 1em;
+  transform: rotate(90deg);
+}
+
+.card .datetr {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 1em;
+  line-height: 1em;
+  transform: rotate(180deg);
+}
+
+.card:hover {
+  background-color: aliceblue;
+  color: black;
+}
+
+.linea {
+  height: 1px;
+  background-color: black;
+}
+
+.larga {
+  width: 100%;
+}
+
+.corta {
+  width: 85%;
+  ;
+}
+
+.cartel {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+  justify-content: center;
+  
+}
+
+.cartel span {
+  line-height: 1em;
+  font-size: 1.5em;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 3px;
+}
+
+.cartel span:nth-child(2){
+  background-color: #bf1c1c;
+}
+
+.cartel span:nth-child(3){
+  background-color: #e6e613;
+}
+
+.cartel span:nth-child(4){
+  background-color: #3db31c;
+}
+
+.texto p{
+  font-weight:bold;
+  font-style: italic;
+  margin:0px;
+}
+
+/* CUSTOM SELECT */
+.opciones{
+  color: white;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.custom-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 57px;
+  padding: 10px 38px 10px 16px;
+  background: #fff 16px center;
+  background-size: 10px;
+  transition: border-color .1s ease-in-out,box-shadow .1s ease-in-out;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+.custom-select:hover {
+  border: 1px solid #999;
+}
+.custom-select:focus {
+  border: 1px solid #999;
+  box-shadow: 0 3px 5px 0 rgba(0,0,0,.2);
+  outline: none;
+}
+/* remove default arrow in IE */
+select::-ms-expand {
+  display:none;
+}
+
+.marcador{
+  color:whitesmoke;
+}
