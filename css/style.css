@@ -53,7 +53,7 @@ textarea {
   color: white;
   border-radius: 1em;
   padding: 0.1em;
-  /*   margin: 2em; */
+  margin: 2em auto; 
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -211,5 +211,6 @@ select::-ms-expand {
 }
 
 .marcador{
+  text-align: center;
   color:whitesmoke;
 }
